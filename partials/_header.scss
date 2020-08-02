@@ -1,0 +1,176 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  //estilos del navbar
+  #navbar {
+    overflow: hidden;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    //estilos del logo
+
+    #logo {
+      img {
+        width: 24px;
+        height: 24px;
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+      }
+
+      @media screen and (min-width: 768px) {
+        img {
+          width: 36px;
+          height: 36px;
+          margin-left: 4rem;
+          margin-top: 0;
+        }
+      }
+    }
+
+    //estilos del menu
+
+    .menu {
+      margin-top: 0.7rem;
+      padding: 0;
+      list-style: none;
+      background-color: #0000ec;
+      clear: both;
+      max-height: 0;
+      transition: max-height 0.3s ease-out;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 0;
+      }
+
+      li {
+        line-height: 3rem;
+        margin-left: 1rem;
+      }
+      a {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 16px;
+        color: #ffffff;
+        letter-spacing: 0;
+        text-decoration: none;
+        line-height: 28px;
+        font-weight: 300;
+      }
+    }
+
+    // Menu hamburguesa
+    .menu-icon {
+      margin-right: 1rem;
+
+      position: relative;
+      float: right;
+      cursor: pointer;
+
+      // lineas del menu hamburguesa
+      .nav-icon {
+        margin-right: 1rem;
+
+        bottom: 0.8rem;
+        background-color: #060a24;
+        display: block;
+        width: 18px;
+        height: 2px;
+        position: relative;
+        transition: background 0.2s ease-out;
+
+        &:before {
+          background-color: #060a24;
+          content: '';
+          display: block;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 5px;
+          transition: all 0.2s ease-out;
+        }
+
+        &:after {
+          background-color: #060a24;
+          content: '';
+          display: block;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: -5px;
+          transition: all 0.2s ease-out;
+        }
+      }
+    }
+    // Checkbox oculto
+    .menu-btn {
+      display: none;
+    }
+
+    .menu-btn:checked ~ .menu {
+      max-height: 100%;
+    }
+
+    //Convertir las líneas en una cruz
+    .menu-btn:checked ~ .menu-icon .nav-icon {
+      background: transparent;
+    }
+    .menu-btn:checked ~ .menu-icon .nav-icon:before {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+    .menu-btn:checked ~ .menu-icon .nav-icon:after {
+      transform: rotate(45deg);
+      top: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-right: 4rem;
+
+    .menu {
+      li {
+        display: inline;
+        line-height: 28px;
+        padding: 1rem;
+
+        a {
+          font-family: 'IBM Plex Mono', monospace;
+          font-size: 16px;
+          color: #060a24;
+          letter-spacing: 0;
+          text-decoration: none;
+          line-height: 28px;
+          opacity: 100%;
+          font-weight: 400;
+
+          &:hover {
+            font-family: 'IBM Plex Mono', monospace;
+            color: #00f3bb;
+            text-decoration: line-through;
+          }
+
+          &:active {
+            font-family: 'IBM Plex Mono', monospace;
+            color: rgba(6, 10, 36, 0.56);
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+    .menu-icon {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "partials/header";
+@import "partials/hero";
+@import "partials/episodes";
+@import "partials/history";
+@import "partials/interviews";
+@import  "partials/topics";
+@import "partials/news";
+@import "partials/footer";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+

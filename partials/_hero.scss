@@ -1,0 +1,119 @@
+#hero {
+  margin-top: 2rem;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 9rem;
+    margin-left: 8rem;
+    
+  }
+
+  //estilos del título
+
+  #hero__title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: #060a24;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin-left: 1.2rem;
+    font-weight: 400;
+
+    @media screen and (min-width: 768px) {
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 64px;
+      color: #060a24;
+      letter-spacing: 0;
+      
+    }
+
+    #helloworld {
+      display: block;
+
+      @media screen and (min-width: 768px) {
+        display: inline;
+      }
+    }
+
+    #dot {
+      @media screen and (min-width: 768px) {
+        color: #0000ec;
+        padding: 0;
+      }
+    }
+  }
+
+  //Estilos de la bajada ( párrafo debajo del título)
+
+  #hero__text {
+    
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: 'IBM Plex Mono';
+    font-size: 14px;
+    color: #060a24;
+    letter-spacing: 0;
+    line-height: 22px;
+
+    @media screen and (min-width: 768px) {
+     max-width: 37rem;
+      margin-top: 2rem;
+      font-size: 16px;
+      color: #060a24;
+      letter-spacing: 0;
+      line-height: 24px;
+
+     
+    }
+
+  
+    
+  }
+  //estilos del botón conocé más
+
+  #hero__more {
+    display: block;
+    background: #00f3bb;
+    margin-top: 3rem;
+    margin-left: 0.8rem;
+    padding: 0.7rem;
+
+    border: none;
+
+    width: 93vw;
+    height: 3rem;
+    font-family: 'IBM Plex Mono', monospace;
+
+    font-size: 16px;
+    color: #060a24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      background-image: linear-gradient(225deg, #0000fe 0%, #00f0b8 100%);
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    @media screen and (min-width: 768px) {
+       
+        max-width: 15rem;
+      
+      height: 3.5rem;
+      padding: 0.9rem;
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: 500;
+      font-size: 18px;
+      color: #060a24;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 24px;
+      text-decoration: none;
+      
+    }
+  }
+}

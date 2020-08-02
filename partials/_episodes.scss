@@ -1,0 +1,69 @@
+//estilos de sección episodios
+#episodes {
+  margin-top: 2rem;
+  padding-bottom: 10rem;
+  padding-top: 2rem;
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+
+  @media screen and (min-width: 768px) {
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    padding-top: 6rem;
+    margin-top: 1rem;
+  }
+
+  //estilos de título Episodios
+  #episodes__title {
+    font-size: 36px;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: 42px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    padding-left: 0.9rem;
+    padding-bottom: 1.3rem;
+    margin-top: 3rem;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 11rem;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      font-size: 48px;
+color: #FFFFFF;
+letter-spacing: 0;
+    }
+  }
+
+  //Estilos del contenedor de los iframes
+  #episodes__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0.3rem;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-right: 2rem;
+      margin-left: 2rem;
+    }
+
+    //estilos de los iframes
+
+    iframe {
+      height: 240px;
+      width: 100%;
+      padding-left: 0.8rem;
+      padding-right: 0.8rem;
+      border: none;
+      
+
+      @media screen and (min-width: 768px) {
+        width: 46%;
+        margin: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+//estilos del footer 
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+   
+    }
+   
+
+//estilos del título del footer 
+
+    #footer__title{
+        font-size: 14px;
+color: #060A24;
+letter-spacing: 0;
+line-height: 22px;
+font-family: 'IBM Plex Mono', monospace;
+font-weight: 400;
+text-align: center;
+
+@media screen and (min-width: 768px) {
+    margin-left:4rem;
+    font-size: 16px;
+
+}
+    }
+
+
+    //estilos del contenedor de los íconos 
+
+#footer__icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;;
+    margin-top: 1rem;
+    margin-right: 1.5rem;;
+    margin-left: 1.5rem;
+    
+    
+   
+
+   @media screen and (min-width: 768px) {
+    margin-right:4rem;
+    width: 12rem;
+    margin-top: 0;
+    
+    
+
+   }
+  
+//estilos de cada ícono
+    
+  .footer__social{
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 28px;
+    
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
+
+  
+  
+  }
+
+}
+}
